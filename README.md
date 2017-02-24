@@ -12,12 +12,11 @@ then visit `127.0.0.1:8082`
 
 
 #### 敲demo中遇到的坑：
-- 同一个模块里`require`和`export`可以混用，而`import`和`module.exports`则可以，详见 [Cannot assign to read only property 'exports' of object '#<Object>' (mix require and export) #4039](https://github.com/webpack/webpack/issues/4039).	
+* 同一个模块里`require`和`export`可以混用，而`import`和`module.exports`则可以，详见 [Cannot assign to read only property 'exports' of object '#< Object >' (mix require and export) #4039](https://github.com/webpack/webpack/issues/4039).	
 
+* 箭头函数作用域问题, **app/App.js**	
 
-- 箭头函数作用域问题, **app/App.js**
-
-```js
+```jsx
 var App = React.createClass({
 
 	getInitialState: ()=> {
@@ -38,7 +37,7 @@ var App = React.createClass({
 })
 ```
 
-```js
+```jsx
     var App = React.createClass({
 
 	getInitialState() {
