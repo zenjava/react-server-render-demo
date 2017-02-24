@@ -1,0 +1,13 @@
+# node_modules
+/node_modules/
+
+# npm-debug
+**/npm-debug.log
+
+# .idea
+**/.idea
+
+# webpack bundles
+**/entry.generator.js
+**/page.generator.js
+public/*
