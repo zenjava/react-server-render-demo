@@ -30,7 +30,9 @@ app.get('/', (req, res) => {
         <title>测试</title>
       </head>
       <body>
-      <div id="root">${html}</div>
+      <div id="root">
+${html}
+</div>
         ${renderScripts([ 'assets/entry.generator.js' ])}
       </body>
       </html>
